@@ -1,5 +1,27 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0 auto;
+  padding: 10px;
+  color: var(--text-clr);
+  font-size: 18px;
+  background-image: var(--cover-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Медиа-запрос для телефонов */
+@media (min-width:375px) {
+  .page {
+    padding: 10px;
+  }
+}
+
+/* Медиа-запрос для всего что больше телефона */
+@media (min-width: 768px) {
+  .page {
+    padding: 20px;
+  }
 }

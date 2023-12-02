@@ -1,0 +1,21 @@
+{
+  "detectedConfig": {
+    "typescript": false,
+    "naming": "Kebab Case",
+    "unit": "px",
+    "framework": "html-css",
+    "styling": "CSS"
+  },
+  "locofyConfig": {
+    "project_name": "3",
+    "id": "656af869e70ea08730636e6b",
+    "framework": "html-css",
+    "typescript": false,
+    "path": "public/",
+    "componentsPath": "c:\\Users\\roman\\Desktop\\slozhno-sosredotochitsya\\src\\components",
+    "screensPath": "c:\\Users\\roman\\Desktop\\slozhno-sosredotochitsya\\src\\pages",
+    "styling": "CSS",
+    "unit": "px",
+    "naming": "Kebab Case"
+  }
+}

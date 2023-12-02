@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-ibm-plex-mono: "IBM Plex Mono";
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-97xl: 116px;
+
+  /* Colors */
+  --color-gray: #000028;
+  --color-deeppink: #ff0070;
+  --color-fuchsia: #db00ff;
+  --color-pink: #f1b2ce;
+
+  /* Gaps */
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-smi: 13px;
+  --padding-3xs: 10px;
+}
