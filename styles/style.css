@@ -7,7 +7,6 @@
     var(--background-color);
   background-size: auto 768px;
   background-attachment: fixed;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   transition-duration: 0.2s;
 }
 
@@ -15,17 +14,44 @@
 .header {
   position: relative;
   z-index: 1;
-  padding: 5px;
 }
 
-/* Общие стили для .header_text */
+.header__rec {
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  color: var(--rec-color);
+  text-transform: uppercase;
+}
+
+/* Лампочка REC */
+.header__rec::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin: -5px -15px 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+  padding: 238px 0 136px;
+}
+
 .header_text {
+  margin-left: -2%;
   color: var(--title-color);
-  font-size: clamp(7.25rem, 6.0869rem + 5.8156vw, 9.8125rem);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
 
-/* Общие стили для .decorated-zone */
 .decorated-zone::after,
 .decorated-zone::before {
   content: "";
@@ -49,14 +75,39 @@
   border-right: none;
 }
 
-/* Общие стили для .header__theme-menu */
-.header__theme-menu {
-  padding-top: 20px;
-}
-
 .header__theme-menu-list {
   display: flex;
+  justify-content: center;
   gap: 10px;
+}
+
+.header_content {
+  align-self: flex-end;
+  font-weight: 700;
+  width: 50%;
+}
+
+/* Медиа-запрос для экранов шириной менее 1025 пикселей */
+@media (max-width: 1025px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    padding: 238px 0 136px;
+  }
+}
+
+/* Медиа-запрос для экранов шириной менее 768 пикселей и большей или равной 375 пикселям */
+@media (max-width: 767px) and (min-width: 375px) {
+  .header__theme-menu-list {
+    gap: 10px;
+  }
 }
 
 .header__theme-menu-button {
@@ -87,76 +138,43 @@
   border: 1px solid;
 }
 
-/* Дополнительные стили для .header__theme-menu-list */
-.header__theme-menu-list {
-  display: flex;
-  gap: 10px;
-}
-
-/* Медиа запросы */
-@media (min-width: 1025px) {
-  .header__theme-menu-list {
-    flex-direction: row;
+/*Медиа-запрос для экранов шириной менее 1025 пикселей и большей или равной 768 пикселям*/
+@media (max-width: 1025px) and (min-width: 768px) {
+  .header__theme-menu {
+    padding-top: 190px;
   }
 
-  .page,
   .container {
-    padding: 20px;
-  }
-
-  .header_text {
-    margin-top: 319px;
-    margin-left: -3%;
-  }
-
-  .decorative.content__text.background-color {
-    width: 491px;
-    margin-right: 20px;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    padding: 238px 0 136px;
   }
 
   .header__theme-menu-list {
-    justify-content: center;
-    /* Добавлено выравнивание по центру */
+    gap: 10px;
   }
+  
 }
 
-@media (max-width: 768px) {
-  .header__theme-menu-list {
-    flex-direction: column;
-    align-items: center;
-    /* Выравнивание по центру в колонне */
+/* Медиа-запрос для экранов шириной менее 768 пикселей и большей или равной 375 пикселям */
+@media (max-width: 767px) and (min-width: 375px) {
+  .header__theme-menu {
+    padding-top: 75px;
   }
 
-  .page {
-    padding: 75px;
-  }
-
-  .container,
-  .decorative.content__text.background-color {
+  .container {
+    padding: 70px 0 74px;
     gap: 57px;
-    margin-right: 20px;
-    margin-left: auto;
   }
 
-  .header_text {
-    margin-top: 463px;
-    margin-left: 0;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: column;
-    justify-content: flex-end;
+  .background-color {
+    color: var(--article-title-color);
+    align-self: flex-end;
+    font-weight: 700;
+    width: 100%;
   }
 }
-
-@media (max-width: 375px) {
-  .header_text {
-    margin-top: 238px;
-    margin-left: 0;
-  }
-}
-
 
 /* Основное */
 /* Общие стили для контейнера и контента */
