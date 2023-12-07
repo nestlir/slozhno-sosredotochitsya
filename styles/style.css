@@ -76,6 +76,7 @@
 }
 
 .header__theme-menu-list {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -182,6 +183,7 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+  align-items: flex-start;
 }
 
 /* Общие стили для секции "colum" и "row" */
@@ -213,10 +215,12 @@
 }
 
 /* Медиа запросы */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .content {
     gap: 20px;
+    align-items: flex-start; /* Изменить выравнивание для меньших экранов */
   }
+
 
   .content-section.column .content__title,
   .content-section.column .content__block {
