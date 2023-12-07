@@ -3,23 +3,22 @@
 
 .page {
   --transition-duration: 0.25s;
-
+  color: var(--main-text-color);
   background: var(--background-image) no-repeat top center,
     var(--background-color);
   background-size: auto 768px;
   background-attachment: fixed;
-  color: var(--main-text-color);
   transition-duration: var(--transition-duration);
 }
 
 /* Header */
 
 .header {
-  padding: 0 20px;
   position: relative;
+  padding: 0 20px;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header {
     padding: 0 10px;
   }
@@ -27,13 +26,13 @@
 
 .header__rec {
   position: absolute;
-  color: var(--rec-color);
-  text-transform: uppercase;
   top: 21px;
   right: 49px;
+  color: var(--rec-color);
+  text-transform: uppercase;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header__rec {
     top: 11px;
     right: 39px;
@@ -43,14 +42,14 @@
 .header__rec::after {
   content: "";
   position: absolute;
+  top: 50%;
+  right: 0;
   width: 10px;
   height: 10px;
   margin: -5px -20px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--rec-color);
   background-color: var(--rec-color);
-  top: 50%;
-  right: 0;
 }
 
 .header__theme-menu {
@@ -70,19 +69,19 @@
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header__theme-menu-list {
     gap: 11px;
   }
 }
 
 .header__theme-menu-button {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--corners-color);
-  line-height: 100%;
-  padding: 2.5px 12px;
   border: transparent;
+  padding: 2.5px 12px;
+  color: var(--corners-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
   background: none;
   transition-duration: var(--transition-duration);
   cursor: pointer;
@@ -104,72 +103,72 @@
   border: 1px solid;
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .header__theme-menu {
     padding-top: 190px;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header__theme-menu {
     padding-top: 75px;
   }
 }
 
 .header__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
   margin-left: -2%;
   color: var(--title-color);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
 
 .header__title-container {
-  padding: 238px 0 136px;
   display: flex;
   flex-direction: column;
   gap: 76px;
+  padding: 238px 0 136px;
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .header__title-container {
-    padding: 150px 0 183px;
     gap: 133px;
+    padding: 150px 0 183px;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header__title-container {
-    padding: 70px 0 74px;
     gap: 57px;
+    padding: 70px 0 74px;
   }
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) and (width >=375px) {
   .header__title {
     text-shadow: 4px 4px 0px var(--title-decor);
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .header__title {
     margin-left: -3%;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 0;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 82.5%;
   }
 }
 
 .header__subtitle {
-  color: var(--article-title-color);
   align-self: flex-end;
-  font-weight: 700;
   width: 50%;
+  color: var(--article-title-color);
+  font-weight: 700;
 }
 
 @media (width < 425px) {
@@ -181,19 +180,19 @@
 /* Main */
 
 .main {
-  padding: 0 20px;
-  margin: 60px 0;
-  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   gap: 80px;
+  margin: 60px 0;
+  padding: 0 20px;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .main {
-    padding: 0 10px;
-    margin: 34px 0;
     gap: 50px;
+    margin: 34px 0;
+    padding: 0 10px;
   }
 }
 
@@ -203,22 +202,22 @@
 
 .section__title {
   margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 700;
   color: var(--section-title-color);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .dark-title {
   color: var(--article-title-color);
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .section__title {
     width: 35%;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .section__title {
     width: 100%;
     margin-bottom: 20px;
@@ -231,9 +230,9 @@
 }
 
 .section__article-list-title {
-  font-size: 18px;
-  font-weight: 700;
   color: var(--article-title-color);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .section__article-item {
@@ -243,208 +242,319 @@
 }
 
 .section__article-title {
-  font-size: 18px;
-  font-weight: 700;
   color: var(--article-title-color);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .section__article-title_regular {
   font-weight: 400;
 }
 
-.section__article-text-link {
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  background: var(--background-image) no-repeat top center,
+    var(--background-color);
+  background-size: auto 768px;
+  background-attachment: fixed;
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  transition-duration: 0.2s;
+}
+
+/* Общие стили для .header */
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+}
+
+/* Общие стили для .header_text */
+.header_text {
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 6.0869rem + 5.8156vw, 9.8125rem);
+  text-shadow: 4px 4px 0px var(--title-shadow);
+}
+
+/* Общие стили для .decorated-zone */
+.decorated-zone::after,
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--corners-color);
+}
+
+.decorated-zone::after {
+  top: 20px;
+  right: 20px;
+  border-bottom: none;
+  border-left: none;
+}
+
+.decorated-zone::before {
+  bottom: 20px;
+  left: 20px;
+  border-top: none;
+  border-right: none;
+}
+
+/* Общие стили для .header__theme-menu */
+.header__theme-menu {
+  padding-top: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
   border: transparent;
+  padding: 2.5px 12px;
+  color: var(--corners-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  background: none;
+  transition-duration: var(--transition-duration);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: var(--hover-color);
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--corners-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid;
+}
+
+/* Дополнительные стили для .header__theme-menu-list */
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+/* Медиа запросы */
+@media (min-width: 1025px) {
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .page,
+  .container {
+    padding: 20px;
+  }
+
+  .header_text {
+    margin-top: 319px;
+    margin-left: -3%;
+  }
+
+  .decorative.content__text.background-color {
+    width: 491px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+
+  .header__theme-menu-list {
+    justify-content: center;
+    /* Добавлено выравнивание по центру */
+  }
+}
+
+@media (max-width: 768px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: center;
+    /* Выравнивание по центру в колонне */
+  }
+
+  .page {
+    padding: 75px;
+  }
+
+  .container,
+  .decorative.content__text.background-color {
+    gap: 57px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+
+  .header_text {
+    margin-top: 463px;
+    margin-left: 0;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 375px) {
+  .header_text {
+    margin-top: 238px;
+    margin-left: 0;
+  }
+}
+
+
+/* Основное */
+/* Общие стили для контейнера и контента */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Общие стили для секции "colum" и "row" */
+.content-section {
+  display: grid;
+  gap: 20px;
+}
+
+.content__text.background-color {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  background-color: var(--paragraph-bg-color);
+}
+
+.content__paragraph {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.content__title,
+.color__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Медиа запросы */
+@media (max-width: 767px) {
+  .content {
+    gap: 20px;
+  }
+
+  .content-section.column .content__title,
+  .content-section.column .content__block {
+    text-align: left;
+  }
+}
+
+/* Два столбца на десктопе */
+@media (min-width: 768px) {
+  .content-section.column {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+
+  .content-section.column .content__title {
+    grid-column: 1 / 2;
+    width: 50%;
+    text-align: left;
+  }
+
+  .content-section.column .content__block {
+    grid-column: 2 / 2;
+    text-align: left;
+  }
+
+  .content-section.row {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+  }
+
+  .content-section.row .content__title {
+    grid-column: span 3;
+  }
+}
+
+/* Одна колонка на экранах шириной 768px и меньше */
+@media (max-width: 768px) {
+  .content-section.row {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .content-section.row .content__title {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Дополнительные стили для ссылок */
+.link {
+  border: transparent;
+  text-decoration: none;
   text-shadow: 3px 3px 0px var(--link-shadow);
   transition-duration: var(--transition-duration);
 }
 
-.section__article-text-link:hover {
+.link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.section__article-text-link:focus {
-  outline: none;
-}
-
-.section__article-text-link:focus-visible {
+.link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
-.section:first-of-type,
-.section:nth-of-type(3) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.section:first-of-type .section__title,
-.section:nth-of-type(3) .section__title {
-  flex: 0 0 auto;
-  width: 33%;
-}
-
-@media (width < 1024px) and (width >= 768px) {
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
-    width: 32%;
-  }
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.section:first-of-type .section__article-list,
-.section:nth-of-type(3) .section__article-list {
-  flex: 0 0 auto;
-  width: 66%;
-  flex-direction: column;
+/* Общие стили для секции "section" */
+.section {
   gap: 20px;
 }
 
-@media (width < 1024px) and (width >= 768px) {
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
-    width: 65%;
-  }
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
-    width: 100%;
-  }
-}
-
-.section:nth-of-type(2) .section__title {
-  width: 30%;
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .section:nth-of-type(2) .section__title {
-    width: 100%;
-  }
-}
-
-@media (width >= 1024px) {
-  .section:nth-of-type(2) .section__article-list {
-    justify-content: space-between;
-  }
-}
-
-@media (width < 1024px) and (width >= 375px) {
-  .section:nth-of-type(2) .section__article-list {
-    gap: 20px;
-  }
-}
-
-.section:nth-of-type(2) .section__article-item {
-  flex: 0 0 auto;
-  width: 32%;
-}
-
-@media (width < 1024px) and (width >= 375px) {
-  .section:nth-of-type(2) .section__article-item {
-    flex: 1 0 auto;
-    width: 100%;
-  }
-}
-
-.section:last-of-type {
-  display: grid;
-}
-
-.section:last-of-type .section__title {
-  grid-column: 1/-1;
-  width: 100%;
-  margin: 0;
-}
-
-@media (width >= 768px) {
-  .section:last-of-type .section__image {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .section:last-of-type .section__image:first-of-type,
-  .section:last-of-type .section__image:last-of-type {
-    grid-column: span 2;
-  }
-
-  .section:last-of-type .section__image:nth-of-type(2),
-  .section:last-of-type .section__image:nth-of-type(3) {
-    grid-row: span 2;
-  }
-}
-
-@media (width < 768px) {
-  .section:last-of-type .section__image {
-    width: 100%;
-    height: auto;
-  }
-
-  .section:last-of-type .section__image-container {
-    width: 100px;
-  }
-}
-
-@media (width >= 768px) {
-  .section:last-of-type {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px 19px;
-  }
-}
-
-@media (width < 768px) {
-  .section:last-of-type {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 
 /* Footer */
 
 .footer {
-  padding: 282px 20px;
   position: relative;
+  padding: 282px 20px;
   text-align: center;
 }
 
 .footer__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
   color: var(--title-color);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px 0px var(--title-shadow);
 }
 
-@media (width < 1024px) and (width >= 375px) {
+@media (width < 1024px) and (width >=375px) {
   .footer__title {
     text-shadow: 2px 2px 0px var(--title-decor);
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .footer {
     padding: 434px 20px;
   }
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .footer {
     margin-top: 40px;
     padding: 262px 10px;
