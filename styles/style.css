@@ -242,9 +242,6 @@
   }
 }
 
-
-
-
 /* Дополнительные стили для ссылок */
 .link {
   border: transparent;
@@ -261,13 +258,54 @@
   outline: 1px solid var(--main-text-color);
 }
 
-/* Общие стили для секции "section" */
+/* Галлерея*/
 .section {
-  gap: 20px;
+  text-align: center;
 }
 
-/* Footer */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
 
+.section__image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.double-column {
+  width: calc(70% - 10px);
+}
+
+@media (max-width: 767px) {
+  .double-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.double-row {
+  height: 400px;
+}
+
+.double-column {
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .double-row,
+  .double-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Footer */
 .footer {
   position: relative;
   padding: 282px 20px;
