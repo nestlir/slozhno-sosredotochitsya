@@ -224,7 +224,8 @@
   width: calc(70% - 10px);
 }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+/* Планшет и выше */
+@media (min-width: 768px) {
   .content-section {
     justify-content: flex-end;
   }
@@ -244,6 +245,56 @@
   }
 }
 
+/* Мобильные устройства */
+@media (max-width: 767px) {
+  .content-section .content__block {
+    width: 100%;
+  }
+
+  .content-section:first-of-type .content__block,
+  .content-section:last-of-type .content__block {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .content-section .content__title {
+    width: 100%;
+  }
+}
+
+/* Десктоп и выше */
+@media (min-width: 1024px) {
+  .content-section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-section:nth-of-type(2) .content__block {
+    flex: 0 0 30%;
+  }
+}
+
+/* Планшет и выше, но до 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-section {
+    justify-content: flex-end;
+  }
+
+  .content-section .content__block {
+    width: 65%;
+  }
+
+  .content-section:first-of-type .content__block,
+  .content-section:last-of-type .content__block {
+    flex: 0 0 65%;
+    width: 65%;
+  }
+
+  .content-section .content__title {
+    width: calc(30% - 10px);
+  }
+}
+
+/* Мобильные устройства, но до 768px */
 @media (max-width: 767px) {
   .content-section .content__block {
     width: 100%;
@@ -261,24 +312,6 @@
 
 .content-section:nth-of-type(2) .content__title {
   width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .content-section:nth-of-type(2) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .content-section:nth-of-type(2) .content__block {
-    flex: 0 0 30%;
-  }
-}
-
-@media (max-width: 1023px) {
-  .content-section:nth-of-type(2) .content__block {
-    flex: 1 0 auto;
-    width: 100%;
-  }
 }
 
 /* Дополнительные стили для ссылок */
@@ -367,12 +400,6 @@
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px 0px var(--title-shadow);
-}
-
-@media (width < 1024px) and (width >=375px) {
-  .footer__title {
-    text-shadow: 2px 2px 0px var(--title-decor);
-  }
 }
 
 @media (width < 768px) and (width >=375px) {
