@@ -13,7 +13,6 @@
 /* Общие стили для .header */
 .header {
   position: relative;
-  z-index: 1;
 }
 
 .header__rec {
@@ -173,74 +172,144 @@
   .background-color {
     align-self: flex-end;
     width: 100%;
-    color: var(--article-title-color);
-    font-weight: 700;
   }
 }
 
 /* Основное */
 /* Общие стили для контейнера и контента */
 .content {
+  padding: 0 20px;
+  margin: 60px 0;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  gap: 80px;
 }
 
-/* Общие стили для секции "column" */
-.content-section.column {
+.section {
+  line-height: 130%;
+}
+
+.content__title {
+  font-weight: 700;
+  color: var(--title);
+}
+
+.content-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-end;
 }
 
-.content__text.background-color,
+.background-color,
 .content__paragraph,
 .content__title,
 .color__text {
-  color: var(--main-text-color);
   font-size: 18px;
   line-height: 23.4px;
 }
 
 .content__text.background-color {
-  font-weight: 700;
-  background-color: var(--paragraph-bg-color);
+  color: var(--text);
+  background-color: var(--background-title-color);
 }
 
 .content__title,
 .color__text {
   margin-bottom: 20px;
-}
-
-.content__paragraph,
-.content__title,
-.color__text {
   text-align: left;
 }
-
-.content-section.column .content__title {
-  width: calc(30% - 10px);
+.content__text.content__paragraph{
+  gap: 10px;
 }
 
-.content-section.column .content__block {
-  width: calc(70% - 10px);
-}
-
-.content-section.column .content__paragraph {
+.content-section .content__paragraph {
   font-weight: 400;
   width: 100%;
 }
 
-/* Медиа запросы для адаптивности */
-@media (max-width: 767px) {
-  .content-section.column .content__title,
-  .content-section.column .content__block {
+.content__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (width < 1024px) and (width >= 375px) {
+  .content__title {
     width: 100%;
-    /* На мобильных устройствах элементы занимают всю ширину */
   }
 }
+
+.content-section:first-of-type,
+.content-section:nth-of-type(3) {
+  justify-content: flex-end;
+}
+
+.content-section:first-of-type .content__title,
+.content-section:nth-of-type(3) .content__title {
+  width: 33%;
+}
+
+@media (width < 1024px) and (width >= 375px) {
+  .content-section:first-of-type .content__title,
+  .content-section:nth-of-type(3) .content__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.content-section:first-of-type .content__block,
+.content-section:nth-of-type(3) .content__block {
+  width: 66%;
+  gap: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-section:first-of-type .content__block,
+  .content-section:nth-of-type(3) .content__block {
+    width: 65%;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-section:first-of-type .content__block,
+  .content-section:nth-of-type(3) .content__block {
+    width: 100%;
+  }
+}
+
+.content-section:nth-of-type(2) .section__title {
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .content-section:nth-of-type(2) .section__title {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-section:nth-of-type(2) .content__block {
+    justify-items: baseline;
+  }
+}
+
+@media (max-width: 1023px) {
+  .content-section:nth-of-type(2) .content__block {
+    gap: 20px;
+  }
+}
+
+.content-section:nth-of-type(2) .content__block {
+  flex: 0 0 30%;
+}
+
+@media (max-width: 1023px) {
+  .content-section:nth-of-type(2) .content__block {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
 
 /* Дополнительные стили для ссылок */
 .link {
@@ -260,37 +329,38 @@
 
 /* Галерея */
 .section {
-  text-align: flex-start;
+  text-align: start;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   justify-content: flex-start;
+  gap: 20px;
 }
 
 .section__image {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  width: 100%;
-  height: 100%;
 }
 
 .section:last-of-type .section__image:first-of-type,
 .section:last-of-type .section__image:last-of-type {
   grid-column: span 2;
 }
+
 .section:last-of-type .section__image:nth-of-type(2),
 .section:last-of-type .section__image:nth-of-type(3) {
   grid-row: span 2;
 }
 
 .section:last-of-type .section__image {
-  grid-row: span 1;
   grid-column: span 1;
+  grid-row: span 1;
 }
 
 @media (max-width: 767px) {
@@ -299,7 +369,7 @@
   }
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .section:last-of-type {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 19px;

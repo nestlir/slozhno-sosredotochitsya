@@ -4,15 +4,15 @@
   переключая тему
 */
 .page.theme_light {
+  --title: #353430;
   --main-text-color: #353430;
-  --title-color: #ffc2e6;
+  --title-color: #FFC2E6;
+  --background-title-color: #FF8DCB;
   --title-shadow: #ff0070;
-  --paragraph-bg-color: #ff8dcb;
+  --text: #353430;
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-  --background-color: #fff1f7;
+  --background-color: #FFF1F7;
   --background-image: url(../images/cover-image-light.png);
-  --article-title-color: var(--main-text-color);
-  --section-title-color: var(--main-text-color);
   --border-color: var(--title-shadow);
   --corners-color: var(--main-text-color);
   --link-shadow: var(--title-color);

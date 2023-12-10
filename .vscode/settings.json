@@ -17,5 +17,6 @@
     "styling": "CSS",
     "unit": "px",
     "naming": "Kebab Case"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
