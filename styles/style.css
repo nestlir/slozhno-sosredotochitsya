@@ -6,13 +6,14 @@
   background: var(--background-image) no-repeat top center,
     var(--background-color);
   background-size: auto 768px;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Добавлено свойство для фиксированного фона */
   transition-duration: 0.2s;
 }
 
 /* Общие стили для .header */
 .header {
   position: relative;
+  height: 100vh; /* Занимает всю высоту экрана */
 }
 
 .header__rec {
