@@ -251,6 +251,10 @@
     flex: 0 0 100%;
     width: 100%;
   }
+
+  .content-section .content__title {
+    width: 100%;
+  }
 }
 
 .content-section:nth-of-type(2) .content__title {
