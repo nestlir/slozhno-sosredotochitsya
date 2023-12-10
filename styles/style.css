@@ -196,6 +196,10 @@
   text-align: left;
 }
 
+.content__paragraph {
+  margin-bottom: 10px;
+}
+
 .background-color,
 .content__paragraph,
 .content__title,
@@ -292,6 +296,21 @@
 
   .content-section .content__title {
     width: calc(30% - 10px);
+  }
+
+  /* Адаптив для второй секции от 768px до 1024px */
+  .content-section:nth-of-type(2) {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .content-section:nth-of-type(2) .content__block {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+
+  .content-section:nth-of-type(2) .content__title {
+    width: 100%;
   }
 }
 
