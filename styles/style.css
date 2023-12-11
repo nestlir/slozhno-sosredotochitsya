@@ -329,6 +329,78 @@
   }
 }
 
+/* Десктоп и выше */
+@media (min-width: 1024px) {
+  .content {
+    margin: 80px 0;
+    gap: 80px;
+  }
+
+  .content__block {
+    gap: 20px;
+  }
+
+  .content__paragraph {
+    margin-bottom: 10px;
+  }
+
+  .content__text {
+    margin-bottom: 10px;
+  }
+
+  .content-section {
+    gap: 20px;
+  }
+}
+
+/* Планшет и выше, но до 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    margin: 80px 0;
+    gap: 80px;
+  }
+
+  .content__block {
+    gap: 20px;
+  }
+
+  .content__paragraph {
+    margin-bottom: 10px;
+  }
+
+  .content__text {
+    margin-bottom: 10px;
+  }
+
+  .content-section {
+    gap: 80px;
+  }
+}
+
+/* Мобильные устройства, но до 768px */
+@media (max-width: 767px) {
+  .content {
+    margin: 50px 0;
+    gap: 50px;
+  }
+
+  .content__block {
+    gap: 20px;
+  }
+
+  .content__paragraph {
+    margin-bottom: 10px;
+  }
+
+  .content__text {
+    margin-bottom: 10px;
+  }
+
+  .content-section {
+    gap: 50px;
+  }
+}
+
 /* Дополнительные стили для ссылок */
 .link {
   border: transparent;
