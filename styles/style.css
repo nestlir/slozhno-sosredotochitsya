@@ -281,7 +281,7 @@
   .content-section:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
-    gap: 90px;
+    gap: 20px;
   }
 
   .content-section:nth-of-type(2) .content__block {
