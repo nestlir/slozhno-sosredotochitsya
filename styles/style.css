@@ -8,13 +8,13 @@
   background-attachment: fixed;
   /* Добавлено свойство для фиксированного фона */
   transition-duration: 0.2s;
-  height: 100vh;
-  /* Занимает всю высоту экрана */
 }
 
 /* Общие стили для .header */
 .header {
   position: relative;
+  height: 100vh;
+
 }
 
 .header__rec {
@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     gap: 76px;
-    padding: 238px 10px 136px 10px;
+    padding: 463px 20px 462px 20px;
   }
 
   .header__theme-menu-list {
@@ -189,8 +189,6 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  gap: 90px;
-  margin: 60px 0;
 }
 
 .section {
@@ -283,7 +281,7 @@
   .content-section:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    gap: 90px;
   }
 
   .content-section:nth-of-type(2) .content__block {
@@ -298,13 +296,20 @@
 
 /* Планшет и выше, но до 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    margin: 243px 0;
+    gap: 80px;
+  }
+
   .content-section:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
+    margin: 0  10px 0 10px ;
+    gap: 20px;
   }
 
   .content-section:nth-of-type(2) .content__block {
-    flex: 0 0 236px;
+    width: 100%;
   }
 
   .content-section:nth-of-type(2) .content__title {
@@ -321,9 +326,6 @@
   .content-section:nth-of-type(2) .content__block,
   .content-section:nth-of-type(2) .content__title {
     width: 100%;
-    /* Занимают всю ширину на мобильных устройствах */
-    margin-left: 0;
-    /* Убираем отступ, чтобы заголовок занимал всю ширину */
   }
 }
 
