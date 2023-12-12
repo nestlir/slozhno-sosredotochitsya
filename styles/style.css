@@ -152,7 +152,7 @@
     display: flex;
     flex-direction: column;
     gap: 76px;
-    padding: 463px 20px 462px 20px;
+    padding: 463px 20px;
   }
 
   .header__theme-menu-list {
@@ -172,7 +172,7 @@
 
   .container {
     gap: 57px;
-    padding: 70px 0 74px;
+    padding: 70px 10px 74px 10px;
   }
 
   .background-color {
@@ -253,7 +253,7 @@
 
   .content-section .content__title {
     width: calc(30% - 10px);
-    margin: 0 35px 0 0;
+    margin: 0 -24px 0 0;
   }
 }
 
@@ -376,7 +376,7 @@
 @media (max-width: 767px) {
   .content {
     gap: 50px;
-    margin: 50px 0;
+    margin: 50px 10px;
   }
 
   .content__block {
