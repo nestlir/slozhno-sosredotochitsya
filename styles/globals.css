@@ -17,8 +17,6 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
-  min-inline-size: 375px;
-  max-inline-size: 1024px;
   block-size: 100%;
 }
 

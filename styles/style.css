@@ -4,7 +4,7 @@
   color: var(--main-text-color);
   font-family: var(--main-font);
   background: var(--background-image) no-repeat top center, var(--background-color);
-  background-size: auto 768px;
+  background-size: cover;
   background-attachment: fixed;
   /* Добавлено свойство для фиксированного фона */
   transition-duration: 0.2s;
