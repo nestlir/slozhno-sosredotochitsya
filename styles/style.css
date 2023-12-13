@@ -47,8 +47,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 78px;
-  padding: 259px 0 137px 4px;
+  gap: 76px;
+  padding: 238px 0 136px;
 }
 
 /* Header Text */
@@ -95,19 +95,14 @@
   padding-top: 20px;
 }
 
-.dark-title {
-  color: var(--article-title-color);
-}
-
 /* Header Content */
 .header_content {
   align-self: flex-end;
   font-weight: 700;
-  white-space: pre-line;
 }
 
 /* Media Queries */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
@@ -118,7 +113,7 @@
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .header_content {
     width: 491px;
     margin-right: 20px;
@@ -160,7 +155,7 @@
   border: 1px solid;
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .header__theme-menu {
     padding-top: 190px;
   }
@@ -198,7 +193,6 @@
 }
 
 /* Основное */
-/* Общие стили для контейнера и контента */
 .content {
   display: flex;
   flex-direction: column;
@@ -208,7 +202,7 @@
   padding: 0 20px;
 }
 
-@media (width < 768px) and (width >=375px) {
+@media (max-width: 767px) and (min-width: 375px) {
   .content {
     gap: 50px;
     margin: 34px 0;
@@ -231,13 +225,13 @@
   color: var(--background-color);
 }
 
-@media (width < 1024px) and (width >=768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   .content__title {
     width: 35%;
   }
 }
 
-@media (width < 768px) and (width >=375px) {
+@media (max-width: 767px) and (min-width: 375px) {
   .content__title {
     width: 100%;
     margin-bottom: 20px;
@@ -249,26 +243,20 @@
   flex-wrap: wrap;
 }
 
-.content__title {
-  color: var(--text);
-  font-weight: 700;
-  font-size: 18px;
-}
-
 .content__block {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.content__text {
+.content__text,
+.content__text.background-color {
   color: var(--text);
   font-weight: 700;
   font-size: 18px;
 }
 
 .content__text.background-color {
-  color: var(--text);
   background-color: var(--background-title-color);
 }
 
@@ -297,8 +285,8 @@ link:focus {
 .content-section:first-of-type,
 .content-section:nth-of-type(3) {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .content-section:first-of-type .content__title,
