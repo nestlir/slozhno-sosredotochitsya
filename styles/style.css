@@ -8,12 +8,19 @@
   background-attachment: fixed;
   transition-duration: 0.2s;
 }
-
+/* 
+!!!!!! SOS 
+у меня не получаеться подогнать 
+по макету оступы, хотя все брала от туда, где то поменяла, 
+чтобы попробывать, но не получается 
+*/
 /* Общие стили для .header */
 /* Header */
 .header {
   position: relative;
+  height: 100vh;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 @media (width < 767px) and (width >=375px) {
@@ -370,6 +377,12 @@ link:focus {
 }
 
 /* Галерея */
+/* 
+!!!!!! SOS 
+ по гитхабу показывает что 
+ фотки для мобилок всхлопываеться
+ как с этим быть 
+*/
 .section:last-of-type {
   display: grid;
 }
