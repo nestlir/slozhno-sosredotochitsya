@@ -320,7 +320,7 @@ link:focus {
   width: 66%;
 }
 
-@media (width >=1024px) and (width >=768px) {
+@media (width >1024px) and (width >=768px) {
 
   .content-section:first-of-type .article__content,
   .content-section:nth-of-type(3) .article__content {
