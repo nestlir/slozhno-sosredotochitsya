@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: var(--font-family);
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   min-inline-size: 375px;
@@ -52,44 +52,4 @@ a {
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
-}
-
-.decorated-zone::before {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--corners-color);
-  border-left: 1px solid var(--corners-color);
-}
-
-@media (width < 768px) and (width >=375px) {
-  .decorated-zone::before {
-    bottom: 17px;
-    left: 10px;
-  }
-}
-
-.decorated-zone::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--corners-color);
-  border-right: 1px solid var(--corners-color);
-}
-
-@media (width < 768px) and (width >=375px) {
-  .decorated-zone::after {
-    top: 10px;
-    right: 10px;
-  }
-}
-
-.background-color {
-  background: var(--title-decor);
 }
