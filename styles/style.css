@@ -3,7 +3,6 @@
 .page {
   margin: 0;
   color: var(--main-text-color);
-  font-family: var(--main-font);
   background: var(--background-image);
   background-color: var(--background-color);
   background-repeat: no-repeat;
