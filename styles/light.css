@@ -3,22 +3,21 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-@media (prefers-color-scheme: light) {
-  .page.theme_light {
-    --title: #353430;
-    --main-text-color: #353430;
-    --title-color: #FFC2E6;
-    --background-title-color: #FF8DCB;
-    --title-shadow: #ff0070;
-    --text: #353430;
-    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-    --background-color: #FFF1F7;
-    --background-image: url(../images/cover-image-light.png);
-    --border-color: var(--title);
-    --corners-color: var(--main-text-color);
-    --link-shadow: var(--title-color);
-    --rec-color: var(--background-color);
-  }
+
+.page.theme_light {
+  --title: #353430;
+  --main-text-color: #353430;
+  --title-color: #FFC2E6;
+  --background-title-color: #FF8DCB;
+  --title-shadow: #ff0070;
+  --text: #353430;
+  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+  --background-color: #FFF1F7;
+  --background-image: url(../images/cover-image-light.png);
+  --border-color: var(--title);
+  --corners-color: var(--main-text-color);
+  --link-shadow: var(--title-color);
+  --rec-color: var(--background-color);
 }
 
 .page.theme_light .header__rec {

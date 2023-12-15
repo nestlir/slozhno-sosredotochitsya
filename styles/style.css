@@ -10,7 +10,7 @@
   background-size: cover;
   background-attachment: fixed;
   transition-duration: 0.2s;
-
+  font-family: var(--main-font);
 }
 
 /* Header */

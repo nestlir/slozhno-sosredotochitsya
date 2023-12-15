@@ -1,7 +1,4 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
-/* Глобальные стили для проекта */
-
 *,
 *::before,
 *::after {
@@ -14,12 +11,8 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 18px;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  block-size: 100%;
 }
 
 h1,
