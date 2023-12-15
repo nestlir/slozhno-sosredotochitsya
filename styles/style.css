@@ -1,3 +1,7 @@
+:root {
+  --transition-duration: 0.2s;
+}
+
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 /* Page */
 .page {
@@ -9,7 +13,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  transition-duration: 0.2s;
   font-family: var(--main-font);
 }
 
@@ -200,7 +203,7 @@
 
 /* Media Queries */
 /* Small screens (Mobile) */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page {
     margin: 10px;
   }
@@ -323,7 +326,7 @@
 }
 
 /* Medium screens (Tablet) */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page {
     margin: 20px;
   }
@@ -452,7 +455,7 @@
 }
 
 /* Large screens (Desktop) */
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .page {
     margin: 10px;
   }
