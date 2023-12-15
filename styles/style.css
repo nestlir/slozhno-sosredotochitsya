@@ -5,7 +5,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 /* Page */
 .page {
-  margin: 0;
   color: var(--main-text-color);
   background: var(--background-image);
   background-color: var(--background-color);
