@@ -17,7 +17,7 @@
   --text: #000028;
   --title-decor: var(--title-shadow);
   --background-image: url(../images/cover-image-dark.png);
-  --border-color: var(--main-text-color);
+  --border-color: var(--title);
   --corners-color: var(--title-shadow);
   --link-shadow: var(--title-shadow);
   --rec-color: var(--title-shadow);
@@ -33,7 +33,7 @@
   --background-color: #FFF1F7;
   --text: #353430;
   --background-image: url(../images/cover-image-light.png);
-  --border-color: var(--title-shadow);
+  --border-color: var(--title);
   --corners-color: var(--main-text-color);
   --link-shadow: var(--title-color);
   --rec-color: var(--background-color);

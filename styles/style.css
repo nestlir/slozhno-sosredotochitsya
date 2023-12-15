@@ -69,7 +69,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--main-text-color);
+  outline: 1px solid var(--title);
   pointer-events: none;
 }
 
@@ -83,7 +83,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--main-text-color);
+  border-bottom: 1px solid var(--title);
 }
 
 .header_content {
