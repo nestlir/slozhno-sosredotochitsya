@@ -1,13 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 /* Page */
 .page {
+  margin: 0;
   color: var(--main-text-color);
   font-family: var(--main-font);
   background: var(--background-image);
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   transition-duration: 0.2s;
+
 }
 
 /* Header */
@@ -82,8 +86,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-bottom: 1px solid var(--border-color);
+  outline: none;
 }
 
 .header_content {
@@ -388,8 +392,8 @@
   }
 
   .content-section:nth-of-type(2) {
-    margin: 39px 10px;
     gap: 0;
+    margin: 39px 10px;
   }
 
   .content-section:nth-of-type(2) .content__title {
