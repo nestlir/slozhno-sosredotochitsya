@@ -20,7 +20,7 @@
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header__rec {
@@ -348,6 +348,10 @@
 
 /* Medium screens (Tablet) */
 @media screen and (min-width: 768px) {
+  .header{
+    min-height: 180vh;
+  }
+
   .header__rec {
     top: 21px;
     right: 50px;
