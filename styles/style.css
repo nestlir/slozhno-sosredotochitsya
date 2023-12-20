@@ -375,16 +375,11 @@
 
   .header_content {
     margin-right: 6px;
+    width: 364px;
   }
 
   .article__content {
     width: 95%;
-  }
-
-  .header_content {
-    display: flex;
-    justify-content: flex-end;
-    width: 364px;
   }
 
   .content {
