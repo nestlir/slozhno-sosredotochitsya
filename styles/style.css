@@ -19,13 +19,19 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr min-content 1fr;
+  min-height: 668px;
   height: 100vh;
+  width: 100%;
 }
 
 .header__rec {
   position: absolute;
   color: var(--rec-color);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
   text-transform: uppercase;
 }
 
@@ -34,9 +40,9 @@
   position: absolute;
   top: 50%;
   right: 0;
-  width: 10px;
-  height: 10px;
-  margin: -5px -15px 0 0;
+  width: 9px;
+  height: 9px;
+  margin: -5px -20px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--rec-color);
   background-color: var(--rec-color);
@@ -55,6 +61,7 @@
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0px var(--title-shadow);
+  line-height: 82.5%;
 }
 
 .header__theme-menu-list {
@@ -64,11 +71,11 @@
   grid-row: 1;
   justify-content: center;
   align-items: flex-end;
-  gap: 10px;
+  gap: 11px;
 }
 
 .header__theme-menu-button {
-  height: 26px;
+  height: 25px;
   border: transparent;
   padding: 0px 13px;
   color: var(--corners-color);
@@ -86,7 +93,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-color);
+  outline: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus {
@@ -95,7 +102,6 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--border-color);
-  outline: none;
 }
 
 .header_content {
@@ -257,8 +263,8 @@
 /* Small screens (Mobile) */
 @media screen and (max-width: 767px) {
   .header__rec {
-    top: 12px;
-    right: 10px;
+    top: 10px;
+    right: 39px;
   }
 
   .decorated-zone::before {
@@ -272,14 +278,15 @@
   }
 
   .header__theme-menu {
-    margin: 73px 12px;
+    margin: 75px 15px 0;
   }
 
   .container {
-    gap: 50px;
-    margin: 0 10px;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 82.5%;
+    gap: 49px;
+    margin: 68px 10px;
+    font-size: 7.25rem;
+    text-shadow: 4px 4px 0px var(--title-shadow);
+
   }
 
   .content {
@@ -347,20 +354,27 @@
 
 /* Medium screens (Tablet) */
 @media screen and (min-width: 768px) {
+  .header {
+    min-height: 800px;
+  }
+
   .header__rec {
-    top: 21px;
-    right: 50px;
+    top: 20px;
+    right: 49px;
   }
 
   .header__theme-menu {
-    margin: 183px 20px;
+    margin: 190px 20px 0;
   }
 
   .container {
-    gap: 160px;
-    margin: 0 20px;
+    gap: 163px;
+    margin: 176px 14px 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 82.5%;
+  }
+
+  .header_content {
+    margin-right: 6px;
   }
 
   .article__content {
@@ -398,22 +412,27 @@
 
 /* Large screens (Desktop) */
 @media screen and (min-width: 1024px) {
+  .header {
+    min-height: 100%;
+  }
+  
   .header__rec {
-    top: 21px;
-    right: 50px;
+    top: 20px;
+    right: 49px;
   }
 
   .header_content {
-    width: 491px;
+    width: 490px;
+    margin-right: 0;
   }
 
   .container {
-    gap: 125px;
-    margin: 273px 20px;
+    gap: 115px;
+    margin: 276px 20px;
   }
 
   .header__theme-menu {
-    margin: 20px 0;
+    margin-top: 18px;
   }
 
   .header__theme-menu-list {
@@ -422,7 +441,7 @@
 
   .content {
     gap: 80px;
-    margin: 60px 20px;
+    margin: 59px 20px;
   }
 
   .article__content {
@@ -442,7 +461,7 @@
   .content-section:nth-of-type(2) .article__content {
     display: grid;
     grid-template-columns: repeat(3, 315px);
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
   }
 
@@ -452,15 +471,8 @@
   }
 
   .footer {
-    margin: 55px 0;
+    margin-top: 60px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header {
-    min-height: 100vh;
-  }
-}
-
-/*ДОБИ СВОБОДЕН*/
-/*ДА ЖЕ?*/
+/*Надеюсь,это вск и я смогу есть чипсики с чувством выполненной работы*/
