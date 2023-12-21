@@ -59,7 +59,7 @@
   margin-left: -2%;
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0px var(--title-shadow);
   line-height: 82.5%;
 }
@@ -230,7 +230,7 @@
 .link {
   border: transparent;
   text-decoration: none;
-  text-shadow: 3px 3px 0px var(--link-shadow);
+  text-shadow: 2px 2px 0px var(--link-shadow);
   transition-duration: var(--transition-duration);
   cursor: pointer;
 }
@@ -278,20 +278,23 @@
   }
 
   .header__theme-menu {
-    margin: 75px 15px 0;
+    margin: 73px 11px 0;
   }
 
   .container {
-    gap: 49px;
+    gap: 53px;
     margin: 68px 10px;
     font-size: 7.25rem;
     text-shadow: 4px 4px 0px var(--title-shadow);
+  }
 
+  .header_text {
+    margin: 2px 0;
   }
 
   .content {
     gap: 31px;
-    margin: 38px 0;
+    margin: 40px 0;
   }
 
   .content-section {
@@ -355,7 +358,7 @@
 /* Medium screens (Tablet) */
 @media screen and (min-width: 768px) {
   .header {
-    min-height: 800px;
+    min-height: 1024px;
   }
 
   .header__rec {
@@ -455,7 +458,7 @@
 
   .content-section:nth-of-type(2) .article__content {
     display: grid;
-    grid-template-columns: repeat(3, 315px);
+    grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
     gap: 20px;
   }
@@ -469,5 +472,3 @@
     margin-top: 60px;
   }
 }
-
-/*Надеюсь,это вск и я смогу есть чипсики с чувством выполненной работы*/
