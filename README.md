@@ -1,10 +1,40 @@
-Проект "Сложно сосредоточиться"
+# Сложно сосредоточиться — Theme-aware Responsive UI
 
-Вёрстка макета "Сложно сосредоточиться" по курсу Яндекс Практикума "Фулсек-разработчик"
+> Responsive editorial interface with light/dark themes and deliberate visual hierarchy.
 
-https://github.com/nestlir/slozhno-sosredotochitsya.git
+[**Repository →**](https://github.com/nestlir/slozhno-sosredotochitsya)
 
-В этом проекте перед были задача: сверстать адаптивный сайт в светлой и тёмной темах.
+## Overview
 
-Перед тем как приступить к написанию кода, внимательно был изучен макет. Были принять решение, какие подходы использовать при вёрстке.
-Mobile first или Desktop first.
+A responsive landing page implemented from a supplied design. The project explores how typography, contrast, spacing and decorative elements can remain coherent across viewport sizes and color themes.
+
+## Key implementation points
+
+- light and dark theme support;
+- responsive layout with a mobile-first approach;
+- CSS custom properties for theme values;
+- Grid/Flexbox composition;
+- semantic HTML5;
+- careful typography and spacing;
+- visual fidelity to the source design.
+
+## Engineering decisions
+
+Before implementation, the layout was decomposed into semantic sections and responsive rules. The mobile-first approach keeps the base styles focused and makes larger layouts explicit through media queries.
+
+## Stack
+
+**HTML5 · CSS3 · CSS Custom Properties · responsive design · Git**
+
+## Run locally
+
+```bash
+git clone https://github.com/nestlir/slozhno-sosredotochitsya.git
+cd slozhno-sosredotochitsya
+```
+
+Open `index.html` or use a local static server.
+
+## Context
+
+Originally created during frontend training; presented here as a case study of responsive architecture, theming and design implementation.
