@@ -20,9 +20,9 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-height: 668px;
-  height: 100vh;
-  width: 100%;
+  min-block-size: 668px;
+  min-height: 100vh;
+  inline-size: 100%;
 }
 
 .header__rec {
@@ -53,7 +53,7 @@
   flex-direction: column;
 }
 
-.header_text {
+.header__title {
   grid-column: 2 / span 2;
   grid-row: 2;
   margin-left: -2%;
@@ -249,7 +249,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .footer__title {
@@ -288,7 +288,7 @@
     text-shadow: 4px 4px 0px var(--title-shadow);
   }
 
-  .header_text {
+  .header__title {
     margin: 2px 0;
   }
 
