@@ -1,40 +1,44 @@
-# Сложно сосредоточиться — Theme-aware Responsive UI
+# Сложно сосредоточиться
 
-> Responsive editorial interface with light/dark themes and deliberate visual hierarchy.
+Responsive editorial interface с поддержкой светлой, тёмной и автоматической темы.
 
-[**Repository →**](https://github.com/nestlir/slozhno-sosredotochitsya)
+## Live demo
 
-## Overview
+https://nestlir.github.io/slozhno-sosredotochitsya/
 
-A responsive landing page implemented from a supplied design. The project explores how typography, contrast, spacing and decorative elements can remain coherent across viewport sizes and color themes.
+## What it demonstrates
 
-## Key implementation points
-
-- light and dark theme support;
-- responsive layout with a mobile-first approach;
-- CSS custom properties for theme values;
-- Grid/Flexbox composition;
-- semantic HTML5;
-- careful typography and spacing;
-- visual fidelity to the source design.
-
-## Engineering decisions
-
-Before implementation, the layout was decomposed into semantic sections and responsive rules. The mobile-first approach keeps the base styles focused and makes larger layouts explicit through media queries.
+- responsive CSS architecture;
+- CSS Custom Properties для тем;
+- Grid и Flexbox;
+- semantic HTML;
+- theme persistence через localStorage;
+- keyboard-friendly theme controls;
+- responsive image composition;
+- GitHub Actions и GitHub Pages.
 
 ## Stack
 
-**HTML5 · CSS3 · CSS Custom Properties · responsive design · Git**
+**HTML5 · CSS3 · JavaScript · CSS Custom Properties · GitHub Actions · GitHub Pages**
 
 ## Run locally
 
 ```bash
 git clone https://github.com/nestlir/slozhno-sosredotochitsya.git
 cd slozhno-sosredotochitsya
+npm install
 ```
 
-Open `index.html` or use a local static server.
+Запустите проект через любой локальный HTTP-сервер.
 
-## Context
+## Quality checks
 
-Originally created during frontend training; presented here as a case study of responsive architecture, theming and design implementation.
+```bash
+npm run format
+npm run format:check
+npm run lint:css
+```
+
+## Project context
+
+Первоначально создан как учебный проект по адаптивной вёрстке и темизации. Репозиторий развивается как portfolio case study, сохраняя исходную визуальную задачу и демонстрируя современный подход к поддерживаемости и deployment.
